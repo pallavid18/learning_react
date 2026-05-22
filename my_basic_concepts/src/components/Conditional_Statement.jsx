@@ -11,6 +11,9 @@ const Conditional_Statement =()=>{
         return <h4>User Dashboard</h4>
     }
     const isAdminOrUser = false; //for multiple conditions example, it will check if the user is admin or user and render the appropriate component
+    const marks=45; //ternary operator example, it will check if the marks are greater than or equal to 35 and render "Pass" in green color, otherwise it will render "Fail" in red color
+
+    const item =[];
 
     return(
         <>
@@ -39,6 +42,19 @@ const Conditional_Statement =()=>{
             <p>Render different components based on conditions:</p>
             {isAdminOrUser ? <Admin/> : <User/>}
         </div>
+        <hr/>
+
+        <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+            <h2>Marks Result</h2>
+            <h3 style={{color: marks>=35 ? "green" : "red", fontWeight: "bold", fontSize:"20px"}}>{marks>=35 ? "Pass" : "Fail"}</h3>
+        </div>
+        <hr/>
+
+        <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>        
+            <h2 >Finding the items in array</h2>
+            <h5>{item.length > 0 ? "item found: " + item.length : "No items found."}</h5>
+        </div>
+        <hr/>
 
         </> 
     )
