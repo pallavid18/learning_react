@@ -1,34 +1,38 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import img1 from './assets/vite.svg'
+import hero from './assets/hero.png'
 import Function_Example from './components/Function_Example'
 import Event_Example from './components/Event_Example'
 import UserCard from './components/Object_Example'
 import FruitList from './components/Array_Example'
 import Conditional_Statement from './components/Conditional_Statement'
 import Message_Props from './components/Message_Props'
-import {Student_Props, PassingBoolean, PassingObject, PassingArray  } from './components/Student_Props'
+import { Student_Props, PassingBoolean, PassingObject, PassingArray } from './components/Student_Props'
 import Cards_Props from './components/Cards_Props'
+import {According_Props, PassingFunction, PassingImage} from './components/According_Props'
 
 
 
 function App() {
 
-const student ={name:"Pallavi ", age : 20, city:"Pune"};
-const Student1 ={name : "Mayuri", age:21, city: "Pune"};
+  const student = { name: "Pallavi ", age: 20, city: "Pune" };
+  const Student1 = { name: "Mayuri", age: 21, city: "Pune" };
 
-const subjects =["HTML", "CSS","JAVA","PYTHON","MERN"];
+  const subjects = ["HTML", "CSS", "JAVA", "PYTHON", "MERN"];
+  const ShowAlert=()=>{alert("Hello From Parent");};
 
   return (
     <>
-    <h1>Welcome to Basic Concept </h1>
-    <hr/>
-    {/* <Function_Example/> */}
-    {/* <Event_Example/> */}
-    {/* <UserCard/> */}
-    {/* <FruitList/> */}
-    {/* <Conditional_Statement/> */}
+      <h1>Welcome to Basic Concept </h1>
+      <hr />
+      {/* <Function_Example/> */}
+      {/* <Event_Example/> */}
+      {/* <UserCard/> */}
+      {/* <FruitList/> */}
+      {/* <Conditional_Statement/> */}
 
-    <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+      {/* <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
       <h2>Passing String As Props</h2>
       <hr/>
       <Message_Props text="Hello, this is a message passed as a prop!" />
@@ -112,7 +116,67 @@ const subjects =["HTML", "CSS","JAVA","PYTHON","MERN"];
     </div>
 
   </div>
-</div>
+</div> */}
+{/* 
+      <hr /> */}
+      <div className="container" style={{ border: "1px solid blue", borderRadius: "5px", padding: "10px" }}>
+        <div
+          className="container mt-2"
+          style={{
+            backgroundColor: "#f8f9fa",
+            padding: "30px",
+            borderRadius: "15px",
+            boxShadow: "0 4px 15px rgba(0,0,0,0.1)"
+          }}
+        >
+          <h1
+            style={{
+              textAlign: "center",
+              color: "#0d6efd",
+              marginBottom: "10px",
+              fontWeight: "bold"
+            }}
+          >
+            Accordion Using Props
+          </h1>
+
+          <hr />
+
+          <div className="accordion" id="accordionExample">
+
+            <According_Props
+              id="1"
+              title="React"
+              contains="React is a JavaScript library for building user interfaces. React is used to build single-page applications. React allows us to create reusable UI components."
+            />
+
+            <According_Props
+              id="2"
+              title="Spring Boot"
+              contains="Spring Boot is a Java framework used for developing REST APIs and microservices quickly with minimal configuration."
+            />
+
+            <According_Props
+              id="3"
+              title="Bootstrap"
+              contains="Bootstrap is a CSS framework used to create responsive and attractive web designs easily."
+            />
+
+          </div>
+        </div>
+      </div>
+      <hr/>
+
+{/* Passing the Function*/ }
+      <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+        <PassingFunction clickMe={ShowAlert}/>
+      </div>
+      <hr/>
+      <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}} >
+        <PassingImage photo={reactLogo}/>
+        <PassingImage photo={img1}/>
+        <PassingImage photo={hero}/>
+      </div>
 
     </>
   )
