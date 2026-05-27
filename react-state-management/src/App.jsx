@@ -1,3 +1,6 @@
+import UseEffectCounter from './components/UseEffectCounter'
+import UseEffectImageApi from './components/UseEffectImageApi'
+import UseEffectUserListApi from './components/UseEffectUserListApi'
 import UseSateWithPropsHw from './components/UseSateWithPropsHw'
 import UseStateCounter from './components/UseStateCounter'
 import UseStateInputEx from './components/UseStateInputEx'
@@ -11,7 +14,7 @@ function App() {
 
   return (
     <>
-    <h1>Welcome to Use State Management</h1>
+    <h1>Welcome to Use State & Use Effect Management</h1>
     <hr/>
     <UseStateCounter/>
     <hr/>
@@ -64,6 +67,12 @@ function App() {
         </div>
       </div>
     </div>
+    <hr/>
+    <UseEffectCounter/>
+    <hr/>
+    <UseEffectUserListApi/>
+    <hr/>
+    <UseEffectImageApi/>
     </>
   )
 }
