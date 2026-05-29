@@ -5,6 +5,8 @@ import UseEffectImageApi from './components/UseEffectImageApi'
 import UseEffectJavaRestApi from './components/UseEffectJavaRestApi'
 import UseEffectStopWatch from './components/UseEffectStopWatch'
 import UseEffectUserListApi from './components/UseEffectUserListApi'
+import UseRefFormHandling from './components/UseRefFormHandling'
+import UseRefWithInput from './components/UseRefWithInput'
 import UseSateWithPropsHw from './components/UseSateWithPropsHw'
 import UseStateCounter from './components/UseStateCounter'
 import UseStateInputEx from './components/UseStateInputEx'
@@ -81,13 +83,18 @@ function App() {
     <hr/>
     <UseEffectCuurentTime/>
     <hr/>
-    <UseEffectStopWatch/> 
+    <UseEffectStopWatch/>
     <hr/>
     <UseEffectJavaRestApi/>
     <hr/>
     <UseStateSimpleFormHandling/>
     <hr/>
-    <MultiInputFileHandling/> 
+    <MultiInputFileHandling/>
+    <hr/>
+    <UseRefWithInput/>
+    <hr/>
+    <UseRefFormHandling/>
+    <hr/>
     </>
   )
 }
