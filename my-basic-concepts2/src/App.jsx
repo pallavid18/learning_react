@@ -5,6 +5,9 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import TodoArrayLocalStorage from './components/TodoArrayLocalStorage'
 import TodoCrud from './components/TodoCrud'
+import SessionDemo from './components/SessionDemo'
+import SessionLogout from './components/SessionLogout'
+import CookiesExample from './components/CookiesExample'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +19,12 @@ function App() {
     <TodoArrayLocalStorage/>
     <hr/>
     <TodoCrud/>
+    <hr/>
+    <SessionDemo/>
+    <hr/>
+    <SessionLogout/>
+    <hr></hr>
+    <CookiesExample/>
     </>
   )
 }
