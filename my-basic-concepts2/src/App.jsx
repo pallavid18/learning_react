@@ -8,6 +8,8 @@ import TodoCrud from './components/TodoCrud'
 import SessionDemo from './components/SessionDemo'
 import SessionLogout from './components/SessionLogout'
 import CookiesExample from './components/CookiesExample'
+import AxiosFetchDataExample from './components/AxiosFetchDataExample'
+import AxiosExCreateNewUser from './components/AxiosExCreateNewUser'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,11 @@ function App() {
     <SessionLogout/>
     <hr></hr>
     <CookiesExample/>
+    {/* <hr/>
+    <AxiosFetchDataExample/> */}
+    <hr/>
+    <AxiosExCreateNewUser/>
+    
     </>
   )
 }
