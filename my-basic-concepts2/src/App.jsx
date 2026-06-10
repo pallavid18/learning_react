@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import TodoArrayLocalStorage from './components/TodoArrayLocalStorage'
 import TodoCrud from './components/TodoCrud'
 import SessionDemo from './components/SessionDemo'
 import SessionLogout from './components/SessionLogout'
 import CookiesExample from './components/CookiesExample'
-import AxiosFetchDataExample from './components/AxiosFetchDataExample'
+//import AxiosFetchDataExample from './components/AxiosFetchDataExample'
 import AxiosExCreateNewUser from './components/AxiosExCreateNewUser'
+import CrudAxios from './components/CrudAxios'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -31,6 +28,8 @@ function App() {
     <AxiosFetchDataExample/> */}
     <hr/>
     <AxiosExCreateNewUser/>
+    <hr/>
+    <CrudAxios/>
     
     </>
   )

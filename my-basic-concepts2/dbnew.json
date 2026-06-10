@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Pallavi",
+      "email": "pallu@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Mayuri",
+      "email": "mayu@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Kasutubh",
+      "email": "shinchan@example.com"
+    },
+    {
+      "name": "Harsh",
+      "email": "harsh@example.com",
+      "id": "4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
