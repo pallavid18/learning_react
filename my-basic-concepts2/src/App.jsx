@@ -7,6 +7,12 @@ import CookiesExample from './components/CookiesExample'
 //import AxiosFetchDataExample from './components/AxiosFetchDataExample'
 import AxiosExCreateNewUser from './components/AxiosExCreateNewUser'
 import CrudAxios from './components/CrudAxios'
+import WithoutUseMemo from './components/WithoutUseMemo'
+import WithUseMemo from './components/WithUseMemo'
+import CounterUseReducer from './components/UseReducer'
+// import Child from './components/Child'
+import MessageProvider from './components2/MessageProvider'
+import Child from './components2/Child'
 
 function App() {
   
@@ -30,7 +36,19 @@ function App() {
     <AxiosExCreateNewUser/>
     <hr/>
     <CrudAxios/>
-    
+    {/* <hr/>
+    <WithoutUseMemo/> */}
+    {/* <hr/>
+    <WithUseMemo/> */}
+    <hr/>
+    <CounterUseReducer/>
+    {/* <hr/>
+    <h4>Using Prop drilling</h4>
+    <Child message = "Hello Pallavi"/> */}
+    <hr/>
+    <MessageProvider>
+      <Child/>
+    </MessageProvider>
     </>
   )
 }
