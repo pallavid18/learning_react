@@ -13,6 +13,9 @@ import CounterUseReducer from './components/UseReducer'
 // import Child from './components/Child'
 import MessageProvider from './components2/MessageProvider'
 import Child from './components2/Child'
+import Counter1 from './components/Counter1'
+import Counter2 from './components/Counter2'
+import InputEx from './components/InputEx'
 
 function App() {
   
@@ -49,6 +52,12 @@ function App() {
     <MessageProvider>
       <Child/>
     </MessageProvider>
+    <hr/>
+    <Counter1/>
+    <hr/>
+    <Counter2/>
+    <hr/>
+    <InputEx/>
     </>
   )
 }
