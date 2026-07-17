@@ -12,7 +12,7 @@ const Header =() =>{
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#home">Home</a>
         </li>
-       <li className="nav-item">
+      <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#about">About</a>
         </li>
         <li className="nav-item">

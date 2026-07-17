@@ -2,7 +2,7 @@ import HomeImage from "../assets/images/img3.jpg";
 // import "./Home.css";
 import style from "../components/Home.module.css";
 
-// Internal  CSS outside the function 
+// Internal  CSS outside the function
 const paragraphColor={
     color:"aqua",
     background:"burlywood",
