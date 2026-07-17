@@ -29,7 +29,7 @@ function App() {
       {/* <Function_Example/> */}
       {/* <Event_Example/> */}
       {/* <UserCard/> */}
-      {/* <FruitList/> */}
+      <FruitList/>
       {/* <Conditional_Statement/> */}
 
       {/* <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>

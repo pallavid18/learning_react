@@ -96,7 +96,7 @@ function FruitList(){
         <hr/>
 
         <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
-            <h2>List The Name with Starting Letter</h2>
+            <h2>List The Name with Starting Letter P</h2>
             <ul>
                 {result.map((item,index)=>(
                     <li key={index}>{item}</li>

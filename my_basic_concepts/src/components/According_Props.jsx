@@ -86,12 +86,13 @@ const PassingImage =({photo})=> <img
     width="400"
     alt="Image"
     style={{
-      borderRadius: "15px",
+      borderRadius: "10px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
       padding: "5px",
       border: "3px solid white",
       transition: "0.3s",
-      cursor: "pointer"
+      cursor: "pointer",
+      margin:"10px"
     }}
     onMouseOver={(e) => {
       e.target.style.transform = "scale(1.05)";
