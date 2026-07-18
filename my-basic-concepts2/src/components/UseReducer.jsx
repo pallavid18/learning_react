@@ -23,6 +23,8 @@ export default function CounterUseReducer(){
     return(
         <>
         <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+        <h5>Use Reducer</h5>
+        <hr/>
         <h5>Count : {state.count}</h5>
         <button className="btn btn-outline-info m-1" onClick={()=> dispatch({type: "INC"})}>Increment</button>
         <button className="btn btn-outline-info m-1" onClick={()=> dispatch({type: "DEC"})}>Descrement</button>

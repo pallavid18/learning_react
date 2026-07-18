@@ -1,0 +1,19 @@
+.body{
+  background-color: rgb(15, 14, 14);
+}
+
+.head{
+  color: red;
+  font-weight: bold;
+}
+
+/* .heading{
+  color:  red;
+  font-weight: bold;
+} */
+
+.icon{
+  color: white;
+  justify-content: center;
+  
+}

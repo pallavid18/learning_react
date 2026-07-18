@@ -39,10 +39,10 @@ function App() {
     <AxiosExCreateNewUser/>
     <hr/>
     <CrudAxios/>
-    {/* <hr/>
-    <WithoutUseMemo/> */}
-    {/* <hr/>
-    <WithUseMemo/> */}
+    <hr/>
+    <WithoutUseMemo/>
+    <hr/>
+    <WithUseMemo/>
     <hr/>
     <CounterUseReducer/>
     {/* <hr/>

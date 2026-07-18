@@ -16,11 +16,11 @@ import {According_Props, PassingFunction, PassingImage} from './components/Accor
 
 function App() {
 
-  const student = { name: "Pallavi ", age: 20, city: "Pune" };
-  const Student1 = { name: "Mayuri", age: 21, city: "Pune" };
+  const student = { name: "Pallavi ", age: 20, city: "Pune" }; // This is an object named student that contains three properties: name, age, and city. It represents a student's information.
+  const Student1 = { name: "Mayuri", age: 21, city: "Pune" }; // This is another object named Student1 with similar properties.
 
-  const subjects = ["HTML", "CSS", "JAVA", "PYTHON", "MERN"];
-  const ShowAlert=()=>{alert("Hello From Parent");};
+  const subjects = ["HTML", "CSS", "JAVA", "PYTHON", "MERN"]; // This is an array named subjects that contains a list of strings representing different subjects. It can be used to display or manipulate the list of subjects in the application.
+  const ShowAlert=()=>{alert("Hello From Parent");};  // This is a function named ShowAlert that displays an alert message "Hello From Parent" when called. It can be passed as a prop to child components to trigger the alert from within those components.
 
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
       <FruitList/>
       {/* <Conditional_Statement/> */}
 
-      {/* <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+      <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
       <h2>Passing String As Props</h2>
       <hr/>
       <Message_Props text="Hello, this is a message passed as a prop!" />
@@ -69,7 +69,7 @@ function App() {
       <PassingArray list={subjects}/>
     </div>
 
-<div
+{/* <div
   className="container"
   style={{
     border: "2px solid #4CAF50",
@@ -117,8 +117,8 @@ function App() {
 
   </div>
 </div> */}
-{/* 
-      <hr /> */}
+
+      <hr />
       <div className="container" style={{ border: "1px solid blue", borderRadius: "5px", padding: "10px" }}>
         <div
           className="container mt-2"
@@ -169,6 +169,7 @@ function App() {
 
 {/* Passing the Function*/ }
       <div className="container" style={{border:"1px solid blue",borderRadius:"5px",padding:"10px"}}>
+        <h5>Passing Function as a Props</h5>
         <PassingFunction clickMe={ShowAlert}/>
       </div>
       <hr/>

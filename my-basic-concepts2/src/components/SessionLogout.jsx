@@ -5,7 +5,7 @@ const SessionLogout = () => {
     const [user , setUser] = useState("");
     const [timeLeft , setTimeLeft] = useState(120);
 
-    useEffect(() =>{
+    useEffect(() =>{   //This useEffect is used to retrieve the saved user and timeLeft values from sessionStorage when the component mounts. It checks if there are any saved values and updates the state accordingly.
         const savedUser = sessionStorage.getItem("user");
         const savedTime = sessionStorage.getItem("time");
 
@@ -15,7 +15,7 @@ const SessionLogout = () => {
         }
     }, []);
 
-    useEffect(() =>{
+    useEffect(() =>{  //This effect is use for log out automatically 
         if(!user) return;
         if(timeLeft === 0){
             logout();

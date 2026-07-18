@@ -7,7 +7,7 @@ const SessionDemo = () => {
     useEffect(() =>{
         const savedName = sessionStorage.getItem("student");
         if(savedName) setName(savedName);
-    }, []);
+    }, []);    // [] - run only once when component is mounted
 
     const saveName =() =>{
         if(!name) return alert("Enter name");
