@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import BattelCard from './components/BattelCard'
 import PrizePool from './components/PrizePool'
+import PrizePools from './components/PrizePools'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
       <PrizePool/>
       <BattelCard/>
     </div>
-    
+    {/* <PrizePools/> */}
     </>
   )
 }
